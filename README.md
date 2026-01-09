@@ -32,3 +32,4 @@ Display all stored entries
 6. Update Credential
 Show numbered list
 Allow updating password
+  
