@@ -32,4 +32,28 @@ Display all stored entries
 6. Update Credential
 Show numbered list
 Allow updating password
-  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  FOUNDATION TRACK(9 JAN)
+
+🎯 Objective
+
+Build a simple Rock–Paper–Scissors game where:
+The user chooses a move
+The computer move is predefined
+The winner is decided using if / elif / else
+This task focuses on decision-making using conditionals.
+🧠 Problem Statement
+Write a Python program that:
+1.Asks the user to enter their move:
+rock
+paper
+scissors
+2.Use a predefined computer move: ‘computer_move = "rock"’
+[Optionally generate random move]
+3.Compare the user’s move with the computer’s move and print:
+"You Win"
+"You Lose"
+"It's a Draw"
+4.Print both moves before announcing the result.
