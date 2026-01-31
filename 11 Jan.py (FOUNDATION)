@@ -1,0 +1,46 @@
+#FOUNDATION
+def save_file(name,balance):
+    file=open("file.txt","w")
+    file.write(name +"\n")
+    file.write(str(balance))
+    file.close()
+def read_file(name,balance):
+    file=open("file.txt","w")
+    name=file.readline().strip()
+    balance=int(file.readline())
+    file.close()
+    return name,balance
+def deposit(balance):
+    amount=int(input("Enter Amount: "))
+    balance+=amount
+    print("Amount deposited successfully..")
+    return balance
+def withdraw (balance):
+    amount=int(input("Enter Amount: "))
+    if amount>balance:
+        print("Insufficient Amount: ")
+    else:
+        balance-=amount
+        print("Amount withdrawed successfully..")
+    return balance
+def menu():
+    name=input("Enter Account Holder Name: ")
+    balance=int(input("Enter initial balance: "))
+    while True:
+        print("\n CHOOSE OPERATION")
+        print("1. Deposit")
+        print("2. Withdraw")
+        print("3. Exit")
+        choice=int(input("Enter a choice: "))
+        if choice==1:
+            balance=deposit(balance)
+        elif choice==2:
+            balance=withdraw(balance)
+        elif choice==3:
+            print("--- ACCOUNT SUMMARY ---")
+            print("\n Account Holder: ",name)
+            print("Final Balance: ",balance)
+            break
+        else:
+            print("INVALID CHOICE")
+menu()
